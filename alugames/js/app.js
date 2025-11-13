@@ -2,6 +2,7 @@ function alterarStatus(id) {
     let botaoGame = document.getElementById(`game-${id}`);
     let imagem = botaoGame.querySelector('.dashboard__item__img');
     let botao = botaoGame.querySelector('.dashboard__item__button');
+    let nomeJogo = botaoGame.querySelector('.dashboard__item__name');
 
     if (botao.classList.contains('dashboard__item__button--return')) {
         if (confirm(`Você tem certeza que quer devolver o jogo ${nomeJogo.textContent}?`)) {
@@ -14,6 +15,5 @@ function alterarStatus(id) {
         imagem.classList.add('dashboard__item__img--rented');
         botao.textContent = 'Devolver'
     }
-
-
 }
+
