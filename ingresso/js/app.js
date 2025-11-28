@@ -5,4 +5,5 @@ let cadeiraInferior = document.getElementById('qtd-inferior').value;
 function comprar() {
     let quantidade = document.getElementById('qtd').value;
     alert (pista);
+
 }
